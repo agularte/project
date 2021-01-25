@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-general',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./general.component.css']
 })
 export class GeneralComponent implements OnInit {
-
-  constructor() { }
+  
+  constructor(
+    private readonly fb: FormBuilder,
+    private readonly router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
-
-}
+  goToMarketing(): void {
+    this.router.navigate(
+      ['./marketing'])
+}}

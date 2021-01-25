@@ -1,1 +1,124 @@
-<p>general works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <style>
+
+        #new-message{
+            height: 100px;
+            display: flex;
+            align-content: flex-end;
+            max-width: 500px;
+        }
+
+        .col-1{
+            display: flex;
+            min-width: 50px;
+        }
+        .main{
+            padding: 20px;
+        }
+
+
+        img{
+            height: 50px;
+            width:  50px;
+            border-radius: 35%;
+        }
+
+        #side-menu{
+            flex: 200px 0 0;
+            background-color: lightgrey;
+            border-right: 5px solid grey;
+            padding-top: 35px;
+            height: 100vh;
+        }
+
+        .message{
+            background-color: lightgrey;
+            border: 2px solid grey;
+            border-radius: 15px;
+            margin-bottom: 21px;
+            padding: 16px;
+        }
+
+    </style>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="side-menu" class="col">
+                <h3>Channels</h3>
+                <button>General</button>
+                <button (click) = "goToMarketing()">Marketing</button>
+                <div>Operations</div>
+                <div>Random</div>
+                <div>Standups</div>
+            </div>
+            <div class="col main">
+                <h3>Business Communication Platform</h3>
+
+                <div class="message">
+                    <div class="row">
+
+                        <div class="col-1">
+                            <img src="https://imgprd19.hobbylobby.com/6/26/5d/6265d8a54022d3aaf4dcdd7e8170c5d7be4da9dd/700Wx700H-189506-0320-px.jpg" alt="">
+                        </div>
+
+                        <div class="col-11">
+                            <h5>Adam</h5>
+                            <p>Dec 30 2020 at 4:12pm</p>
+                            
+                        </div>
+
+                        <div>
+                            <p>This is a really long test message. I want to see how well the boxes handle large chunks of texts in comparison to shorter bits of text. I don't know if the message bubbles themselves flex very well to the size of the chat inside of them, and I want to see what they end up defaulting to when the text is really short. I'm just gonna keep going until I feel like I have enough text in here to do what I want to do, I think this should be pretty good.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="message">
+                    <div class="row">
+                        
+                        <div class="col-1">
+                            <img src="https://miro.medium.com/max/720/1*LjR0UrFB2a__5h1DWqzstA.png" alt="">
+                        </div>
+
+                        <div class="col-11">
+                            <h5>순우</h5>
+                            <p>Dec 30 2020 at 4:15pm</p>
+                            
+                        </div>
+
+                        <div>
+                            <p>안녕하세요</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                
+                <div id="input-container">
+                    <textarea class="form-control" placeholder="Enter your message here"></textarea>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
