@@ -299,18 +299,15 @@
 </style>
 
 <div>
-  <h1>This is a basic title line, just testing pushes
-    
-  </h1>
+
+  <app-item-detail
+  (newItemEvent) = "addItem($event)"
+  ></app-item-detail>
+
+  <ul>
+    <li *ngFor = "let item of items">{{item}}</li>
+  </ul>
+
 </div>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
 
 <router-outlet></router-outlet>

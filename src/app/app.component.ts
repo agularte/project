@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  currentItem: string = "Tesla"
+  items = ['Tesla', 'Toyota', 'Mazda']
+
+  addItem(newItem: string){
+    this.items.push(newItem);
+  }
   title = 'project';
 }
