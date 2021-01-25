@@ -298,16 +298,5 @@
   }
 </style>
 
-<div>
-
-  <app-item-detail
-  (newItemEvent) = "addItem($event)"
-  ></app-item-detail>
-
-  <ul>
-    <li *ngFor = "let item of items">{{item}}</li>
-  </ul>
-
-</div>
 
 <router-outlet></router-outlet>
