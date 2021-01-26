@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./random.component.css']
 })
 export class RandomComponent implements OnInit {
-
+  tabName = "random";
   constructor() { }
 
   ngOnInit(): void {

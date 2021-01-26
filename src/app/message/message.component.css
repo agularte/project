@@ -1,0 +1,27 @@
+#new-message{
+    height: 100px;
+    display: flex;
+    align-content: flex-end;
+    max-width: 500px;
+}
+
+.col-1{
+    display: flex;
+    min-width: 50px;
+}
+
+
+img{
+    height: 50px;
+    width:  50px;
+    border-radius: 35%;
+}
+
+
+.message{
+    background-color: lightgrey;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-bottom: 21px;
+    padding: 16px;
+}

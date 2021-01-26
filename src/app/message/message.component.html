@@ -1,0 +1,24 @@
+<div *ngFor="let msg of getTabData(tabName)">
+    <div class="message">
+        <div class="row">
+
+            <div class="col-1">
+                <img src="{{ msg.image }}" alt="">
+            </div>
+
+            <div class="col-11">
+                <h5>{{ msg.name }}</h5>
+                <p>{{ msg.date }}</p>
+                
+            </div>
+
+            <div>
+                <div *ngFor="let chat of msg.chat">
+                    <p>{{ chat }}</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

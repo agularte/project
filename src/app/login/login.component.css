@@ -1,0 +1,31 @@
+.window{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.login-window{
+    display: flex;
+    background-image: linear-gradient(225deg, blue, skyblue, white);
+    border-radius: 100px 25px;
+    border: 2px solid black;
+    padding: 20px;
+    align-content: center;
+    margin: 20%;
+    flex-direction: column;
+    height: 30%;
+    width: 20%;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px darkblue;
+}

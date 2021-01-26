@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client-chat.component.css']
 })
 export class ClientChatComponent implements OnInit {
-
+  tabName = "client";
   constructor() { }
 
   ngOnInit(): void {

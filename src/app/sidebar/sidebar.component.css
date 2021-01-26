@@ -1,0 +1,29 @@
+#side-menu{
+    display: flex;
+    flex: 200px 0 0;
+    flex-direction: column;
+    background-color: lightgrey;
+    border-right: 5px solid grey;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 35px;
+    height: 100vh;
+    min-width: 200px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+/* .button, input, optgroup, select, textarea{
+    margin:5px;
+
+} */
+
+.h3{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}

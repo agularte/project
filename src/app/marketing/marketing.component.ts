@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./marketing.component.css']
 })
 export class MarketingComponent implements OnInit {
-
+  tabName = "marketing";
   constructor() { }
 
   ngOnInit(): void {

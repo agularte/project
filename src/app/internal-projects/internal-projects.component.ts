@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./internal-projects.component.css']
 })
 export class InternalProjectsComponent implements OnInit {
-
+  tabName = "internalProjects";
   constructor() { }
 
   ngOnInit(): void {
