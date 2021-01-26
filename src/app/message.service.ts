@@ -66,9 +66,9 @@ export class MessageService {
   constructor() {
     this.msg_db.set("general", this.general);
     this.msg_db.set("marketing", this.marketing);
-    this.msg_db.set("random", this.marketing);
-    this.msg_db.set("interanlProjects", this.marketing);
-    this.msg_db.set("client", this.marketing);
+    this.msg_db.set("random", this.random);
+    this.msg_db.set("internalProjects", this.internalProjects);
+    this.msg_db.set("client", this.client);
     console.log("complete");
    }
 
@@ -79,7 +79,45 @@ export class MessageService {
       return this.msg_db.get(key);
     }
     else{
-      return console.error("no data from this key : ", key);
+      console.error("no data from this key : ", key);
     }
   }
- }
+
+  checkSamePerson(
+    tab : message[],
+    enter_name : string
+    ) : boolean{
+      return tab[tab.length - 1].name == enter_name;
+    }
+
+  pushMessage(
+    key : string,
+    _image : string,
+    _name : string,
+    _date : string,
+    _chat : string
+    ){
+      if(this.msg_db.has(key)){
+
+        let tmpTab : message[] = this.msg_db.get(key);
+
+        if(this.checkSamePerson(tmpTab, _name)){
+          tmpTab[tmpTab.length - 1].chat.push(_chat);
+        }
+        else{
+          let new_message : message = {
+            image: _image,
+            name: _name,
+            date: _date,
+            chat: [_chat]
+          }
+  
+          tmpTab.push(new_message);
+        }
+      }
+      else{
+        console.error("no data from this key : ", key);
+      }
+    }
+}
+

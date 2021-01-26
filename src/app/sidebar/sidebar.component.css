@@ -2,7 +2,8 @@
     display: flex;
     flex: 200px 0 0;
     flex-direction: column;
-    background-color: lightgrey;
+    /* background-color: lightgrey;  */
+    background-color: rgb(173, 173, 255); /* placeholder color*/
     border-right: 5px solid grey;
     justify-content: flex-start;
     align-items: center;
@@ -10,12 +11,23 @@
     height: 100vh;
     min-width: 200px;
 }
+#testing{
+    border-bottom: 3px solid black;
+}
 
-.button{
+
+.btn{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 10px;
+    margin: 5px;
+}
+.btn-success{
+    background-color: rgb(93, 93, 211);
+
+}
+.btn-success:hover{
+    background-color: rgb(112, 112, 253);
 }
 /* .button, input, optgroup, select, textarea{
     margin:5px;

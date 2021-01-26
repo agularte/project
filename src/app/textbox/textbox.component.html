@@ -1,1 +1,11 @@
-<textarea class="form-control" placeholder="Enter your message here!" (keyup.enter)="sendMessage()" ></textarea>
+<form id="message-form">
+    <textarea 
+    type="text" 
+    id="message-form" 
+    class="form-control" 
+    placeholder="Enter your message here!" 
+    #chat 
+    (keydown.enter) = "sendMessage(chat.value)"
+    (keyup.enter) = "chat.value = ''">
+</textarea>
+</form>
