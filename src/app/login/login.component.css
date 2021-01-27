@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .login{
@@ -14,18 +14,46 @@
 
 .login-window{
     display: flex;
-    background-image: linear-gradient(225deg, blue, skyblue, white);
+    background-image: linear-gradient(225deg, #222222, #668888, #BBBBBB);
     border-radius: 100px 25px;
     border: 2px solid black;
     padding: 20px;
     align-content: center;
     margin: 20%;
     flex-direction: column;
-    height: 30%;
+    height: 20%;
     width: 20%;
+    min-width: 300px;
 }
 
 h1{
     color: white;
-    text-shadow: 2px 2px darkblue;
+    text-shadow: 2px 2px teal;
+    font-size: 6vh;
+    padding: 10px;
+    margin: 0;
+}
+
+input{
+    height: 4vh;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    border-color: white;
+    border-radius: 10px 3px;
+    outline-color: teal;
+    outline-width: 10px 3px;
+
+
+}
+
+::placeholder{
+    color: white;
+}
+
+button{
+    height: 3vh;
+    width: 75%;
+    border-radius: 10px 3px;
+    border-color: teal;
 }

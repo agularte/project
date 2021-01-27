@@ -1,23 +1,27 @@
 <div *ngFor="let msg of getTabData(tabName)">
     <div class="message">
         <div class="row">
-
+            
             <div class="col-1">
-                <img src="{{ msg.image }}" alt="">
+                <img id="profile" src="{{ msg.image }}" alt="">
             </div>
-
+            
             <div class="col-11">
-                <h5>{{ msg.name }}</h5>
-                <p>{{ msg.date }}</p>
-                
-            </div>
+                <h4 style="color:rgb(255, 255, 255)">{{ msg.name }}
+                    <h6 style="color:rgb(190, 190, 190)">{{ msg.date }}</h6></h4>
 
+                <button
+                (click)="delMsg(msg.index)">
+                    <img src="https://static.thenounproject.com/png/3058-200.png" alt="">
+                </button>
+
+            </div> 
             <div>
                 <div *ngFor="let chat of msg.chat">
-                    <p>{{ chat }}</p>
+                    <p style="color:rgb(255, 255, 255)">{{ chat }}</p>
                 </div>
             </div>
-
+            
 
         </div>
     </div>

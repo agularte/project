@@ -3,4 +3,5 @@ export interface message {
     name : string;
     date : string;
     chat : string[];
+    index : number;
   }

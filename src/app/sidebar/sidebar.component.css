@@ -1,12 +1,12 @@
 #side-menu{
     display: flex;
-    flex: 200px 0 0;
+    /* flex: 200px 0 0; */
     flex-direction: column;
     /* background-color: lightgrey;  */
-    background-color: rgb(173, 173, 255); /* placeholder color*/
+    background-color: darkgrey; /* placeholder color*/
     border-right: 5px solid grey;
     justify-content: flex-start;
-    align-items: center;
+    align-items: left;
     padding-top: 35px;
     height: 100vh;
     min-width: 200px;
@@ -20,22 +20,30 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 5px;
+    margin-top: 6px;
+    margin-right: 15px;  
+    margin-left: 15px;
 }
 .btn-success{
-    background-color: rgb(93, 93, 211);
-
+    background-color: slategrey;
+    border-color: #506070;
 }
 .btn-success:hover{
-    background-color: rgb(112, 112, 253);
+    background-color: lightgrey;
+    color: #506070;
+    border-color: teal;
 }
-/* .button, input, optgroup, select, textarea{
-    margin:5px;
+.btn-success:active{
+    background-color: lightgrey;
+}
 
-} */
 
 .h3{
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+}
+
+#logout{
+    border-color: #b03030;
 }

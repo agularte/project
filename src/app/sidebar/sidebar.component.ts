@@ -35,4 +35,9 @@ export class SidebarComponent implements OnInit {
     this.router.navigate(
       ['./client-chat'])
 }
+  goToLogin(): void {
+  this.router.navigate(
+    [''])
+}
+
 }

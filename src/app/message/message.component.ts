@@ -21,4 +21,8 @@ export class MessageComponent implements OnInit {
   getTabData(key : string) : message[]{
     return this.msgService.loadData(key);
   }
+
+  delMsg(index : number){
+    this.msgService.delMessage(this.tabName, index);
+  }
 }

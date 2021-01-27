@@ -10,7 +10,7 @@ import { RandomComponent } from './random/random.component';
 const routes: Routes = [
   {
     path: '',
-    component: GeneralComponent
+    component: LoginComponent
   },
   {
     path: 'general',

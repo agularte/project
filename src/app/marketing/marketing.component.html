@@ -14,9 +14,9 @@
         }
 
         .col-2{
-            display: flex;
-            min-width: 50px;
-            padding: 0px;
+            /* min-width: 5vw; */
+            padding-right: 10px;
+            margin-right: 0px;
 
         }
         .main{
@@ -33,8 +33,6 @@
             padding-left: 0px;
         }
 
-        
-
         .message{
             background-color: lightgrey;
             border: 2px solid grey;
@@ -42,7 +40,6 @@
             margin-bottom: 21px;
             padding: 16px;
         }
-
     </style>
     <link 
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
@@ -61,10 +58,8 @@
                 <app-sidebar></app-sidebar>
             </div>
             <div class="col-10">
-
-                <h3>Business Communication Platform</h3>
+                <h3 id="title-gen">Business Communication Platform | #Marketing</h3>
                 <app-message [tabName]="tabName"></app-message>
-
                         <app-textbox [tabName]="tabName"></app-textbox>
                     </div>
             </div>
