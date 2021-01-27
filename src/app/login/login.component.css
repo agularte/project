@@ -14,7 +14,7 @@
 
 .login-window{
     display: flex;
-    background-image: linear-gradient(225deg, #222222, #668888, #BBBBBB);
+    background-image: linear-gradient(225deg, #222222, #668888, #CCC);
     border-radius: 100px 25px;
     border: 2px solid black;
     padding: 20px;
@@ -27,8 +27,8 @@
 }
 
 h1{
-    color: white;
-    text-shadow: 2px 2px teal;
+    color: #FFF;
+    text-shadow: 2px 2px #222222;
     font-size: 6vh;
     padding: 10px;
     margin: 0;
@@ -41,7 +41,7 @@ input{
     width: 100%;
     border-color: white;
     border-radius: 10px 3px;
-    outline-color: teal;
+    outline-color: #668888;
     outline-width: 10px 3px;
 
 
@@ -55,5 +55,5 @@ button{
     height: 3vh;
     width: 75%;
     border-radius: 10px 3px;
-    border-color: teal;
+    border-color: #668888;
 }

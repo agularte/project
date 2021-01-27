@@ -5,7 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class ProfileService {
 
-  constructor() { }
+  constructor() {
+    if(this.pImage == '' || this.pName == ''){
+      this.pImage = localStorage.getItem("pImage");
+      this.pName = localStorage.getItem("pName");
+    }
+   }
 
   pImage: string = '';
   pName: string = '';
@@ -13,6 +18,9 @@ export class ProfileService {
   profile(name: string, image: string): void{
     this.pName = name;
     this.pImage = image;
+
+    localStorage.setItem('pImage', this.pImage);
+    localStorage.setItem('pName', this.pName);
   }
 
 }

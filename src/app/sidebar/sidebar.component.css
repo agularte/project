@@ -4,7 +4,7 @@
     flex-direction: column;
     /* background-color: lightgrey;  */
     background-color: darkgrey; /* placeholder color*/
-    border-right: 5px solid grey;
+    border-right: 7px solid grey;
     justify-content: flex-start;
     align-items: left;
     padding-top: 35px;
@@ -24,18 +24,21 @@
     margin-right: 15px;  
     margin-left: 15px;
 }
+
 .btn-success{
     background-color: slategrey;
     border-color: #506070;
 }
-.btn-success:hover{
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited,
+.btn-success:focus {
     background-color: lightgrey;
     color: #506070;
     border-color: teal;
 }
-.btn-success:active{
-    background-color: lightgrey;
-}
+
 
 
 .h3{
@@ -46,4 +49,6 @@
 
 #logout{
     border-color: #b03030;
+    position: fixed;
+    bottom: 20px;
 }
