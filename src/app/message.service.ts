@@ -12,10 +12,10 @@ export class MessageService {
 
   general : message[] = [
     {
-      image: 'https://www.dw.com/image/55598269_401.jpg',
-      name: 'Donald Trump',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.png/636px-Canonization_2014-The_Canonization_of_Saint_John_XXIII_and_Saint_John_Paul_II_%2814036966125%29.png',
+      name: 'Pope Francis',
       date: '01/26/2021 08:50 PM',
-      chat: ['Hi, Welcome to the general channel'],
+      chat: ['Hello, Welcome to the general channel'],
       index: 0
     },
     {
@@ -36,10 +36,17 @@ export class MessageService {
     },
     {
       image: 'https://i.insider.com/5fa8311bf7d1cb0019e3a6ce?width=700',
-      name: 'George Dubya',
+      name: 'George W. Bush',
       date: '01/26/2021 08:52 PM',
       chat: ['Is this where I can sell my paintings?'],
       index: 1
+    },
+    {
+      image: 'https://pds.joins.com/news/component/newsis/201809/15/NISI20180914_0000201868_web.jpg',
+      name: '정홍섭',
+      date: '01/28/2021 11:33 AM',
+      chat: ['All the students did well!'],
+      index: 2
     }
   ];
   random : message[] = [
@@ -63,7 +70,21 @@ export class MessageService {
       date: '01/26/2021 08:56 PM',
       chat: ['안녕하세요', '사람이 먼저다'],
       index: 2
-    }
+    },
+    {
+      image: 'https://www.csustan.edu/sites/default/files/resize/groups/Office%20of%20the%20President/retouched-president_junn_portraits-6-250x375.jpg',
+      name: 'Ellen Junn',
+      date: '01/26/2021 08:56 PM',
+      chat: ['If Dr. Kim says that team 2 is the best I will give him a raise'],
+      index: 3
+    },
+    {
+      image: 'https://www.cs.csustan.edu/~dkim/images/me_face.jpg',
+      name: 'Danny Kim',
+      date: '01/26/2021 08:57 PM',
+      chat: ['Team 2 is the best team!'],
+      index: 4
+    },
 
   ];
   internalProjects : message[] = [

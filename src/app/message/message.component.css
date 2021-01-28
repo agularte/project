@@ -54,3 +54,8 @@ button{
     justify-content: space-between;
     align-content: flex-end;
 }
+
+.messageText{
+    padding-left: 15px;
+
+}
