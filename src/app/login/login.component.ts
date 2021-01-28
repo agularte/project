@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  //sending the name and image URL to the profile service to be used for messages
   goToGeneral(name: string, image: string): void {
     this.profile.profile(name, image);
     this.router.navigate(

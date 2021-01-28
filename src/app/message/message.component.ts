@@ -17,7 +17,9 @@ export class MessageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  //grabs the string data of what tab the user is in
+  //this makes sure that messages are posted to the correct
+  //place as well as only displaying the correct messages
   getTabData(key : string) : message[]{
     return this.msgService.loadData(key);
   }

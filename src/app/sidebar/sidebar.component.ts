@@ -15,6 +15,7 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //routing functions
   goToMarketing(): void {
     this.router.navigate(
       ['./marketing'])

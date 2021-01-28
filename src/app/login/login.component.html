@@ -19,6 +19,7 @@
             <form>
                 <input type="text" placeholder="Username" #name> <br> <br>
                 <input type="text" placeholder="Profile image URL" #image> <br> <br>
+                <!-- Login form takes in a username and image URL to use in the chat messages -->
                 <button class="btn-success"  (click) = "goToGeneral(name.value, image.value)">Submit</button>
             </form>
             
