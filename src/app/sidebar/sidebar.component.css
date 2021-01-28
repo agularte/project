@@ -10,6 +10,7 @@
     padding-top: 35px;
     height: 100vh;
     min-width: 200px;
+    min-height: 330px
 }
 #testing{
     border-bottom: 3px solid black;
